@@ -1,0 +1,30 @@
+
+
+<div class="row">
+	<h1 class="title">PAGE CONFIG</h1>
+	<form>
+		<table>
+			<tr class="element">
+				<td><label>Page Name</label></td>
+				<td class="input"><input type="text" name="name" ng-model="page.pageName"></td>
+			</tr>
+			<tr class="element">
+				<td><label>Title</label></td>
+				<td class="input"><input type="text" name="name" ng-model="page.title"></td>
+			</tr>
+			<tr class="element">
+				<td><label>Data Type</label></td>
+				<td class="input"><input type="text" name="name" ng-model="page.dataType"></td>
+			</tr>
+			<tr class="element">
+				<td><label>Fields</label></td>
+				<td class="input">
+					<div class="box normal rounded full preview"> 
+			        <textarea ng-model="fields"></textarea>
+			        </div>
+				</td>
+			</tr>
+		</table>
+		<input type="submit" ng-click="submit()">
+	</form>
+</div>

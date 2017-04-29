@@ -1,0 +1,28 @@
+<div class="wrapper">
+	<form class="form" ng-submit="submit()" ng-controller="LoginCtrl">
+	<div class="box note rounded full preview last" ng-show="error">
+	{{error}} 
+    </div>
+	<table>
+		<tbody>
+			<tr class="element">
+				<td><label>Username:</label></td>
+				<td class="input">
+				<input type="text" ng-model="username" name="username" placeholder="username" required />
+				</td>
+			</tr>
+			<tr class="element">
+				<td><label>Password</label></td>
+				<td class="input">
+				<input type="password" ng-model="password" name="password" placeholder="password" required />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="element">
+		<div class="clearfix"></div>
+		<input type="submit" id="submit" value="Sign in">
+		<div class="loading"></div>
+	</div>
+	</form>
+</div>	

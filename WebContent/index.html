@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en" ng-app="app"> 
+    <head> 
+        <title></title>             
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <meta http-equiv="Expires" content="0">
+		<meta http-equiv="kiben" content="no-cache">
+       
+		<script src="js/libs/angular.js"></script>
+		<script src="js/libs/angular-route.js"></script>
+		<script src="js/libs/angular-resource.js"></script>
+		<script src="js/libs/angular-cookies.js"></script>
+		<script src="js/libs/jquery-2.1.4.min.js"></script>
+		<script src="js/libs/bootstrap.js"></script>
+		<script src="js/libs/dynamic-forms.js"></script>
+
+        <script src="js/app.js"></script> 
+        <script src="js/controllers.js"></script>        
+        <script src="js/services.js"></script>
+        <script src="js/businessServices.js"></script>
+        <script src="js/businessServices.js"></script>
+        <script src="js/directives.js"></script>
+        <script src="js/filters.js"></script>
+        
+	    <link rel="stylesheet" type="text/css" href="plugin/jquery.tagsinput.css" />
+		<script type="text/javascript" src="plugin/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="plugin/jquery.tagsinput.js"></script>
+		<script type='text/javascript' src='plugin/jquery-ui.min.js'></script>
+		<link rel="stylesheet" type="text/css" href="plugin/jquery-ui.css" />
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        
+        <script type="text/javascript">
+		$(function() {
+			$('#tags_1').tagsInput({
+				width : 'auto'
+			});
+		});
+		</script>
+
+</head> 
+    <body ng-controller="rootCtrl">
+	<div ng-view></div> 
+    </body> 
+</html> 

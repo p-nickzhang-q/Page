@@ -1,0 +1,21 @@
+<div class="wrapper">
+
+<menu></menu>
+<div class="box normal rounded full preview">
+<div class="row">
+<div class="six columns">
+<h1 ng-if="isCreatePage" class="title">{{page.title1}}</h1>
+<h1 ng-if="isUpdatePage" class="title">{{page.title2}}</h1>
+<div ng-if="isSuccess" class="box tick rounded full preview">
+{{message}} 
+</div>
+<div ng-if="isFail" class="box alert rounded full preview last">
+{{message}}  
+</div>
+<dynamic-form class="form" template="page.fields" ng-model="formData" ng-submit="submit()">
+
+</dynamic-form>
+</div>
+</div>
+</div>
+</div>

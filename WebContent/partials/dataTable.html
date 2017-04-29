@@ -1,0 +1,17 @@
+<table class="box normal rounded full preview">
+	<tr class="row">
+		<td ng-repeat="title in titles">
+		<legend><h4>{{title}}</h4></legend>
+		</td>	
+	</tr>
+	<tr class="row" ng-repeat="data in datas">
+		<td ng-repeat="title in titles">
+		{{data[title]}}
+		</td>
+		<td>
+		<a ng-click="update(data._id)">update</a>
+		<a>delete</a>
+		</td>	
+	</tr>
+</table>
+

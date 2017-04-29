@@ -1,0 +1,16 @@
+<div class="wrapper">
+
+<menu></menu>
+
+<div class="box normal rounded full preview"
+	ng-repeat="module in moduleList">
+	<div class="fancybox">
+		<div class="element">
+			<label><a ng-click="openModule(module._id)">module name :{{module.moduleName}}</a></label>
+			<label><a href="#!/editModule/{{module._id}}">edit</a></label>
+		</div>
+	</div>
+</div>
+
+</div>
+

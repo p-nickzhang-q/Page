@@ -1,0 +1,16 @@
+<header>
+	<h1>dynamic system</h1>
+</header>
+<div class="nav-container">
+	<nav>
+		<ul>
+			<li ng-repeat="menu in menus" >
+			<a ng-if="menu.ifClick" ng-click="click(menu.clickParam)">{{menu.menuName}}</a>
+			<a ng-if="!menu.ifClick" href="{{menu.href}}">{{menu.menuName}}</a>
+			</li>
+		</ul>
+		<div class="nav-left"></div>
+		<div class="nav-right"></div>
+		<div class="nav-above"></div>
+	</nav>
+</div>
